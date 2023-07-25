@@ -28,5 +28,6 @@ public class Calculator {
 		default:
 			System.out.println("invalid symbol.....");
 		}
+		sc.close();
 	}
 }

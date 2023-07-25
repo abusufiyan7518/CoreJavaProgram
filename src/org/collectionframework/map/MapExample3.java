@@ -1,4 +1,5 @@
 package org.collectionframework.map;
+//[advance type of methods used]
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,13 +11,6 @@ public class MapExample3 {
 		map.put(100, "Amit");
 		map.put(100, "rakesh");
 		map.put(102, "Rahul");
-		// Returns a Set view of the mappings contained in this map
-		map.entrySet()
-				// Returns a sequential Stream with this collection as its source
-				.stream()
-				// Sorted according to the provided Comparator
-				.sorted(Map.Entry.comparingByKey())
-				// Performs an action for each element of this stream
-				.forEach(System.out::println);
+		map.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(System.out::println);
 	}
 }

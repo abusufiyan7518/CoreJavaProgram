@@ -21,13 +21,18 @@ public class NestedTry_2 {
 			} catch (ArrayIndexOutOfBoundsException e) {
 				System.out.println("Second inner catch block :" + e);
 			}
-
-			System.out.println("Sab chal rha");
+          finally {
+	     System.out.println("Sab chal rha");
+          }
+			
 		}
 
 		catch (Exception e) {
 			System.out.println("Exception ko handle krliya gya  (outer catch)" + e);
 		}
-		System.out.println("normal flow..");
+		finally {
+			System.out.println("normal flow..");
+		} 
+		
 	}
 }

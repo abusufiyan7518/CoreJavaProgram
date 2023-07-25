@@ -9,6 +9,5 @@ public class Table {
 
 			// System.out.println(t * i);
 		}
-		t++;
 	}
 }

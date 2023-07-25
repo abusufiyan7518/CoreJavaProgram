@@ -98,8 +98,8 @@ class ReservationSystemUI {
 			case 2:
 				System.out.println("Reservations:");
 				for (Reservation r : reservationSystem.getReservations()) {
-					System.out.println(
-							r.getId() + " - " + r.getName() + " - " + r.getDate() + " - " + r.getNumberOfGuests());
+					System.out.println("ID:" + r.getId() + " - " + "Name:" + r.getName() + " - " + "Date:" + r.getDate()
+							+ " - " + "Guests:" + r.getNumberOfGuests());
 				}
 				break;
 			case 3:
@@ -120,7 +120,7 @@ class ReservationSystemUI {
 			}
 
 			System.out.println();
-			
+			scanner.close();
 		}
 	}
 
