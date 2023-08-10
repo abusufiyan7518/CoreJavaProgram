@@ -1,5 +1,5 @@
 package org.collection.list;
-
+//Exception is occur 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -15,7 +15,7 @@ public class ArrayListEx1 {
 		list.add("Mango");
 		list.add("Pineapple");
 		list.add("Guava");
-
+		list.add(null);
 		Collections.sort(list);
 		System.out.println(list);
 		Iterator<String> itr = list.iterator();
